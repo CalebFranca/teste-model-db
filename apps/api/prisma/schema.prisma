@@ -13,3 +13,10 @@ model Task {
   done      Boolean  @default(false)
   createdAt DateTime @default(now())
 }
+
+model IgaoTeste {
+  id String @id @default(uuid()) @db.Uuid
+  idade Int
+
+  @@map("igao_teste")
+}
