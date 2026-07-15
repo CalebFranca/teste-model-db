@@ -1,0 +1,10 @@
+{
+  "name": "crud-test-app",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web"
+  }
+}
